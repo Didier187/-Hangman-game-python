@@ -1,5 +1,4 @@
 #the hangman game
-
 #generate the random word
 # genrate blanks for as many letters in the word
 #get user choice 
@@ -9,7 +8,7 @@
 # if no blanks our man is dead
 # end game
 
-# garding teh outcome of the game
+# grading the outcome of the game
 def grade_game(life, word):
   if(life == len(word)):
     print("your grade is A: You are a master at this")
@@ -35,8 +34,7 @@ life = len(random_word)
 # generate blanks
 for i in range(0, len(random_word)):
   blanks.append("_")
-
-
+#game logic
 while game_on:
   user_choice = input("enter a letter\n")
   if(user_choice in random_word):
